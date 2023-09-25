@@ -5,7 +5,7 @@ metadata:
   name: myapp
   namespace: default
 spec:
-  replicas: 0
+  replicas: 4
   selector:
     matchLabels:
       app: myapp
@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: aputra/myapp-171:v1
+          image: murulii/tomcat:v1
           ports:
             - name: http
-              containerPort: 8181
+              containerPort: 8080
           startupProbe:
             tcpSocket:
-              port: 8181
+              port: 8080
             initialDelaySeconds: 20
             periodSeconds: 5
