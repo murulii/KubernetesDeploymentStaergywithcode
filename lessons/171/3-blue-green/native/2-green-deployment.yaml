@@ -18,12 +18,12 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: aputra/myapp-171:v2
+          image: murulii/tomcat:v2
           ports:
             - name: http
-              containerPort: 8181
+              containerPort: 8080
           startupProbe:
             tcpSocket:
-              port: 8181
+              port: 8080
             initialDelaySeconds: 20
             periodSeconds: 5
