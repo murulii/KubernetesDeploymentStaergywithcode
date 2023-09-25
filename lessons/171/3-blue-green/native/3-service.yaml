@@ -10,5 +10,7 @@ spec:
     replica: blue
   ports:
     - protocol: TCP
-      port: 8181
+      port: 8080
       targetPort: http
+  type: NodePort    
+   
