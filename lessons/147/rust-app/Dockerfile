@@ -8,7 +8,7 @@ COPY . .
 
 RUN cargo build --release
 
-FROM debian:11.6-slim
+FROM debian:11.10-slim
 
 COPY --from=build /app/target/release/hardware-server /hardware-server
 
