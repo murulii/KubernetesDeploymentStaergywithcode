@@ -1,2 +1,2 @@
 boto3>=v1.17.41
-requests>=2.25.1
+requests>=2.32.4
